@@ -2,7 +2,8 @@ package peopleDataSet;
 
 import java.io.IOException;
 
-import static peopledataset.DataReaderUtil.LOGGER;
+import static peopleDataSet.DataReaderUtil.LOGGER;
+
 
  // Custom exception class for handling file read errors.
 

@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import peopledataset.DataReaderUtil;
-import peopledataset.NIStatsLogger;
+import peopleDataSet.DataReaderUtil;
+import peopleDataSet.NIStatsLogger;
+
+
 
 import java.util.Map;
 

@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import static peopledataset.NINumberGenerator.newNINumber;
+import static peopleDataSet.NINumberGenerator.newNINumber;
+
 
 // This utility class provides methods for reading data from a CSV file and processing it.
 

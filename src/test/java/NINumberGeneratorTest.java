@@ -1,7 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import peopledataset.NINumberGenerator;
-import peopledataset.UserData;
+import peopleDataSet.NINumberGenerator;
+import peopleDataSet.UserData;
+
 
 import static org.testng.AssertJUnit.assertEquals;
 
