@@ -1,8 +1,11 @@
-package peopleDataSet;
+package peopledataset.utility;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import peopledataset.FileReadException;
+import peopledataset.generator.NINumberGenerator;
+import peopledataset.UserData;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

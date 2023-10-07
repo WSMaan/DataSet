@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
-import peopleDataSet.DataReaderUtil;
-import peopleDataSet.FileReadException;
+import peopledataset.utility.DataReaderUtil;
+import peopledataset.FileReadException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
