@@ -2,10 +2,10 @@ package peopleDataSet;
 
 import java.io.IOException;
 
-import static peopleDataSet.DataReaderUtil.LOGGER;
+import static peopleDataSet.NIStatsLogger.LOGGER;
 
 
- // Custom exception class for handling file read errors.
+// Custom exception class for handling file read errors.
 
 public class FileReadException extends RuntimeException {
 

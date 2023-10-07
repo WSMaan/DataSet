@@ -1,16 +1,12 @@
 package peopleDataSet;
 
-
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-//  This class generates National Insurance (NI) numbers and logs the count of NI numbers by country of birth.
 public class NINumberGenerator {
-
     //Generates four random digits
-    private static int generateRandomDigits() {
+    public static int generateRandomDigits() {
         Random random = new Random();
         return random.nextInt(9000) + 1000;
     }
@@ -46,7 +42,7 @@ public class NINumberGenerator {
     }
 
     //Generates a new National Insurance (NI) number based on the provided information.
-    public static String newNINumber(UserData userData) {
+    public static String generateNINumberForTheGivenUserData(UserData userData) {
         int randomDigits = generateRandomDigits();
         return constructNINumber(userData, randomDigits);
     }
