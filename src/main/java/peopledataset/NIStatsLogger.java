@@ -1,10 +1,10 @@
-package peopleDataSet;
+package peopledataset;
 
 import java.util.Map;
 import java.util.logging.Logger;
 
 public class NIStatsLogger {
-    static final Logger LOGGER = Logger.getLogger("PeopleDataSet.NIStatsLogger");
+    public static final Logger LOGGER = Logger.getLogger("PeopleDataSet.NIStatsLogger");
 
     public void logCounts(Map<String, Integer> count) {
         LOGGER.info("Count of NI numbers by country:");

@@ -1,4 +1,4 @@
-package peopleDataSet;
+package peopledataset.userdata;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

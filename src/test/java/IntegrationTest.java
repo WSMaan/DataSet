@@ -1,16 +1,21 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import peopleDataSet.DataReaderUtil;
+import peopledataset.utility.DataReaderUtil;
 
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IntegrationTest {
+    private DataReaderUtil dataReader;
+    @BeforeEach
+    void setUp(){
+        dataReader=new DataReaderUtil();
+    }
     @Test
     void testIntegration() {
         String filePath = "src/main/resources/sample.csv";
 
-        DataReaderUtil dataReader = new DataReaderUtil();
 
         Map<String, Integer> result = dataReader.readCSV(filePath);
 

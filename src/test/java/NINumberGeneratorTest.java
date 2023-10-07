@@ -1,23 +1,23 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import peopleDataSet.NINumberGenerator;
-import peopleDataSet.UserData;
+import peopledataset.generator.NINumberGenerator;
+import peopledataset.userdata.UserData;
 
 
 import static org.testng.AssertJUnit.assertEquals;
 
 public class NINumberGeneratorTest {
-    
 
+    private NINumberGenerator niNumberGenerator;
     @BeforeEach
     void setUp() {
-        NINumberGenerator niNumberGenerator = new NINumberGenerator();
+         niNumberGenerator = new NINumberGenerator();
     }
 
     @Test
     void testNewNINumber() {
         UserData userData = new UserData("Jon", "Dean", "1999-12-12", "England");
-        String NINumber = NINumberGenerator.generateNINumberForTheGivenUserData(userData);
+        String NINumber = niNumberGenerator.generateNINumberForTheGivenUserData(userData);
         assertEquals(NINumber.length(), 9);
         assertEquals(NINumber.charAt(0), 'J');
         assertEquals(NINumber.charAt(1), 'D');

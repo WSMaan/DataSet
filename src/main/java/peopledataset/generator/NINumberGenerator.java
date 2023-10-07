@@ -1,26 +1,32 @@
-package peopleDataSet;
+package peopledataset.generator;
 
+import peopledataset.userdata.UserData;
+
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
 public class NINumberGenerator {
+
+    private final SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+
     //Generates four random digits
-    public static int generateRandomDigits() {
+    public  int generateRandomDigits() {
         Random random = new Random();
         return random.nextInt(9000) + 1000;
     }
 
     // Constructs a National Insurance (NI) number based on the provided information
-    public static String constructNINumber(UserData userData, int randomDigits) {
+    public  String constructNINumber(UserData userData, int randomDigits) {
         String firstName = userData.getFirstName();
         String lastName = userData.getLastName();
         String dateOfBirth = userData.getDateOfBirth();
         String countryOfBirth = userData.getCountryOfBirth();
 
+
         // Extract the last two digits of the birth year
         String birthYear = dateOfBirth.substring(2, 4);
-
         Map<String, Character> countryCodes = new HashMap<>();
         countryCodes.put("England", 'E');
         countryCodes.put("Northern Ireland", 'N');
@@ -42,7 +48,7 @@ public class NINumberGenerator {
     }
 
     //Generates a new National Insurance (NI) number based on the provided information.
-    public static String generateNINumberForTheGivenUserData(UserData userData) {
+    public  String generateNINumberForTheGivenUserData(UserData userData) {
         int randomDigits = generateRandomDigits();
         return constructNINumber(userData, randomDigits);
     }

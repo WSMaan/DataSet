@@ -1,8 +1,7 @@
-package peopleDataSet;
+package peopledataset.exceptions;
 
 import java.io.IOException;
-
-import static peopleDataSet.NIStatsLogger.LOGGER;
+import static peopledataset.NIStatsLogger.LOGGER;
 
 
 // Custom exception class for handling file read errors.
