@@ -1,4 +1,3 @@
-Certainly! Here's an updated README.md file for your Java project with improved formatting and additional information:
 
 ---
 
@@ -71,4 +70,3 @@ The project handles file reading exceptions using a custom exception class calle
 
 ---
 
-Feel free to customize this README.md further to provide additional details or instructions specific to your project.
