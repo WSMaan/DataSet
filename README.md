@@ -56,7 +56,7 @@ To use this project, follow these steps:
 
 1. Ensure that you have Java installed on your system.
 
-2. Compile the project using your preferred Java compiler or integrated development environment (IDE).
+2. Compile the project using your preferred Java compiler or IDE.
 
 3. Create a CSV file with the data of individuals, including their first names, last names, dates of birth, and countries of birth.
 
