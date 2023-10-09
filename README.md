@@ -33,7 +33,7 @@ The `NINumberGenerator` class contains the core functionality for generating NI 
   DateOfBirth: 01/01/1998
   CountryOfBirth: England
 
-  NI Number: JS98####
+  NI Number: JS98####E
   ```
 
 - `generateNINumberForTheGivenUserData(UserData userData)`: This method generates a new NI number based on the provided `UserData` object by first generating random digits and then calling `constructNINumber`.
