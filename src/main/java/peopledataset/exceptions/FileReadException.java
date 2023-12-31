@@ -12,7 +12,7 @@ public class FileReadException extends RuntimeException {
         public FileReadException(IOException e) {
 
             LOGGER.severe("An error occurred while reading the file: " + e.getMessage());
-            e.printStackTrace();
+  //          e.printStackTrace();
         }
     }
 
